@@ -24,7 +24,13 @@ const result = () =>{
     setVal(eval(Val).toString());
     
   } catch (error) {
-    setVal('No hay resultados!')
+    setVal('No hay resultados ☹!')
+
+    setTimeout(() => {
+
+      setVal('')
+
+    }, 2000);
   }
 }
 
